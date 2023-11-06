@@ -7,7 +7,7 @@ class StartPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 26, 154, 128),
+      backgroundColor: Color.fromARGB(255, 86, 154, 26),
       body: SafeArea(
         child: ListView(
           //crossAxisAlignment: CrossAxisAlignment.start,
