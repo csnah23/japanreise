@@ -3,8 +3,8 @@ import "package:japan_reise/components/button.dart";
 import "package:japan_reise/models/cart_model.dart";
 import "package:provider/provider.dart";
 
-class NoodleHarmonyPage extends StatelessWidget {
-  const NoodleHarmonyPage({super.key});
+class CookingClassPage extends StatelessWidget {
+  const CookingClassPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +29,7 @@ class NoodleHarmonyPage extends StatelessWidget {
           children: [
             Center(
               child: Image.asset(
-                "lib/images/japan3.png",
+                "lib/images/japan8.jpg",
                 height: 220,
               ),
             ),
@@ -44,7 +44,7 @@ class NoodleHarmonyPage extends StatelessWidget {
                     size: 30,
                   ),
                   Text(
-                    "4,0",
+                    "4,2",
                     style: TextStyle(
                       fontSize: 20,
                       color: Colors.white,
@@ -57,7 +57,7 @@ class NoodleHarmonyPage extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 25.0),
               child: const Text(
-                "Noodle Harmony Japan",
+                "Kochkurs Kawaii Sushi Making",
                 style: TextStyle(
                   fontSize: 28,
                   color: Colors.white,
@@ -80,7 +80,7 @@ class NoodleHarmonyPage extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 25.0),
               child: const Text(
-                "Das Noodle Harmony in Tokio ist mehr als nur ein Restaurant, es ist eine Oase für alle Liebhaber authentischer japanischer Nudel??? schmelzen traditionelle Rezepte und moderne Kochtechniken, um ein einzigartiges Geschmackserlebnis zu kreieren, das jeden Gaumen entzückt",
+                "Begeben Sie sich auf eine kulinarische Reise nach Japan mit unserem Kochkurs, in dem Sie die Kunst der Zubereitung von authentischem und leckerem Sushi, Ramen und Tempura in Ihrer eigenen Küche erlernen",
                 style: TextStyle(
                   fontSize: 16,
                   color: Colors.white,
@@ -99,7 +99,7 @@ class NoodleHarmonyPage extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
                         const Text(
-                          "€ 18,00",
+                          "€ 53,00",
                           style: TextStyle(
                               fontSize: 20,
                               color: Colors.white,
@@ -113,12 +113,12 @@ class NoodleHarmonyPage extends StatelessWidget {
                                 color: Colors.white,
                               ),
                               child: IconButton(
-                                  onPressed: cartModel.removeNudelsuppe,
+                                  onPressed: cartModel.removeCooking,
                                   icon: Icon(Icons.remove)),
                             ),
                             const SizedBox(width: 8),
                             Text(
-                              cartModel.nudelsuppe.toString(),
+                              cartModel.cooking.toString(),
                               style: const TextStyle(
                                   color: Colors.white,
                                   fontSize: 20,
@@ -131,7 +131,7 @@ class NoodleHarmonyPage extends StatelessWidget {
                                 color: Colors.white,
                               ),
                               child: IconButton(
-                                  onPressed: cartModel.addNudelsuppe,
+                                  onPressed: cartModel.addCooking,
                                   icon: Icon(Icons.add)),
                             ),
                           ],

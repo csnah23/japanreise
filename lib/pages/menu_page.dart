@@ -58,7 +58,7 @@ class _MenuPageState extends State<MenuPage> {
           ),
           Padding(
             padding: const EdgeInsets.only(right: 15.0),
-            child: Icon(Icons.shopping_cart),
+            child: IconButton(icon: Icon(Icons.shopping_cart), onPressed: () => Navigator.pushNamed(context, '/cartpage'),),
           )
         ],
       ),

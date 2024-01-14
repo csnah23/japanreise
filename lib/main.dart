@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:japan_reise/cart_page.dart';
 import 'package:japan_reise/models/cart_model.dart';
 import 'package:japan_reise/pages/event_pages/festival.dart';
 import 'package:japan_reise/pages/event_pages/noodle_harmony.dart';
+import 'package:japan_reise/pages/event_pages/cooking_class.dart';
+import 'package:japan_reise/pages/event_pages/ceremony.dart';
 import 'package:japan_reise/pages/menu_page.dart';
 import 'package:japan_reise/pages/start_page.dart';
 import 'package:provider/provider.dart';
@@ -28,7 +31,10 @@ class MyApp extends StatelessWidget {
         '/startpage': (context) => StartPage(),
         '/menupage': (context) => MenuPage(),
         '/festivalpage': (context) => FestivalPage(),
-        '/noodleharmonypage': (context) => NoodleHarmonyPage()
+        '/noodleharmonypage': (context) => NoodleHarmonyPage(),
+        'cookingpage': (context) => CookingClassPage(),
+        'ceremonypage': (context) => CeremonyPage(),
+        '/cartpage': (context) => CartPage()
       },
     );
   }
