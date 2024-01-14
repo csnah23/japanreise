@@ -21,7 +21,7 @@ class EvenTile extends StatelessWidget {
     return Container(
       margin: EdgeInsets.symmetric(horizontal: 25),
       padding: EdgeInsets.all(8),
-      width: 200,
+      width: 180,
       decoration: BoxDecoration(
         color: Color.fromARGB(255, 61, 91, 212),
         borderRadius: BorderRadius.circular(20),
@@ -35,7 +35,7 @@ class EvenTile extends StatelessWidget {
           ),
           Text(
             name,
-            style: const TextStyle(fontSize: 18, color: Colors.white),
+            style: const TextStyle(fontSize: 10, color: Colors.white),
           ),
           SizedBox(height: 10),
           Row(

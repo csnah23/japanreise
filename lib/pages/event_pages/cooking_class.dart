@@ -29,7 +29,7 @@ class CookingClassPage extends StatelessWidget {
           children: [
             Center(
               child: Image.asset(
-                "lib/images/japan8.jpg",
+                "lib/images/japan8.png",
                 height: 220,
               ),
             ),

@@ -22,7 +22,7 @@ class MyButton extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              "mytext",
+              "Reise starten",
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 18,

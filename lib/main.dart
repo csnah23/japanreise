@@ -32,8 +32,8 @@ class MyApp extends StatelessWidget {
         '/menupage': (context) => MenuPage(),
         '/festivalpage': (context) => FestivalPage(),
         '/noodleharmonypage': (context) => NoodleHarmonyPage(),
-        'cookingpage': (context) => CookingClassPage(),
-        'ceremonypage': (context) => CeremonyPage(),
+        '/cookingpage': (context) => CookingClassPage(),
+        '/ceremonypage': (context) => CeremonyPage(),
         '/cartpage': (context) => CartPage()
       },
     );
