@@ -41,14 +41,14 @@ class _MenuPageState extends State<MenuPage> {
         price: "€ 53",
         imagePath: "lib/images/japan8.png",
         rating: "4,2",
-        details: () {},
+        details: () => Navigator.pushNamed(context, '/cookingpage'),
       ),
       EvenTile(
         name: "Teezeremonie im Kimono",
         price: "€ 60",
         imagePath: "lib/images/japan9.png",
         rating: "3,0",
-        details: () {},
+        details: () => Navigator.pushNamed(context, '/ceremonypage'),
       ),
     ];
 
@@ -100,7 +100,7 @@ class _MenuPageState extends State<MenuPage> {
                         fontSize: 22,
                       ),
                     ),
-                    SizedBox(height: 15),
+                    SizedBox(height: 1),
                     MyButton(
                       mytext: "Buchen",
                       event: () {},
@@ -109,7 +109,7 @@ class _MenuPageState extends State<MenuPage> {
                 ),
                 Image.asset(
                   "lib/images/japan1.png",
-                  height: 135,
+                  height: 95,
                 )
               ],
             ),

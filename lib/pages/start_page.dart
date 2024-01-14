@@ -39,9 +39,9 @@ class StartPage extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 15.0),
               child: Text(
-                "Erleben Sie Japan ein!",
+                "Erleben Sie Japan neu!",
                 style: TextStyle(
-                    fontSize: 35,
+                    fontSize: 30,
                     fontWeight: FontWeight.bold,
                     color: Colors.white),
               ),
@@ -63,7 +63,7 @@ class StartPage extends StatelessWidget {
               child: Text(
                 "Entdecke das Land der aufgehenden Sonne und tauche ein in eine Welt voller Tradition, Kultur und atemberaubender Natur.",
                 style: TextStyle(
-                    fontSize: 33,
+                    fontSize: 20,
                     fontWeight: FontWeight.bold,
                     color: Colors.white),
               ),
@@ -72,7 +72,7 @@ class StartPage extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 15.0),
               child: MyButton(
-                mytext: "Reise Starten!",
+                mytext: "Buchung starten!",
                 event: () =>
                     Navigator.restorablePushNamed(context, '/menupage'),
               ),
