@@ -36,6 +36,20 @@ class _MenuPageState extends State<MenuPage> {
         rating: "4,3",
         details: () {},
       ),
+      EvenTile(
+        name: "Kochkurs Kawaii Sushi Making",
+        price: "€ 53",
+        imagePath: "lib/images/japan8.png",
+        rating: "4,2",
+        details: () {},
+      ),
+      EvenTile(
+        name: "Teezeremonie im Kimono",
+        price: "€ 60",
+        imagePath: "lib/images/japan9.png",
+        rating: "3,0",
+        details: () {},
+      ),
     ];
 
     return Scaffold(
@@ -58,7 +72,10 @@ class _MenuPageState extends State<MenuPage> {
           ),
           Padding(
             padding: const EdgeInsets.only(right: 15.0),
-            child: IconButton(icon: Icon(Icons.shopping_cart), onPressed: () => Navigator.pushNamed(context, '/cartpage'),),
+            child: IconButton(
+              icon: Icon(Icons.shopping_cart),
+              onPressed: () => Navigator.pushNamed(context, '/cartpage'),
+            ),
           )
         ],
       ),
@@ -78,7 +95,7 @@ class _MenuPageState extends State<MenuPage> {
                 Column(
                   children: [
                     Text(
-                      "32% Nachlass",
+                      "27% Nachlass",
                       style: TextStyle(
                         fontSize: 22,
                       ),
